@@ -1,0 +1,323 @@
+(dp0
+S'cards'
+p1
+(lp2
+(dp3
+S'hp'
+p4
+I100
+sS'name'
+p5
+S'four of clubs'
+p6
+sa(dp7
+g4
+I100
+sg5
+S'king of hearts'
+p8
+sa(dp9
+g4
+I100
+sg5
+S'queen of hearts'
+p10
+sa(dp11
+g4
+I100
+sg5
+S'jack of hearts'
+p12
+sa(dp13
+g4
+I100
+sg5
+S'three of clubs'
+p14
+sa(dp15
+g4
+I100
+sg5
+S'two of clubs'
+p16
+sa(dp17
+g4
+I100
+sg5
+S'ace of clubs'
+p18
+sa(dp19
+g4
+I100
+sg5
+S'ten of hearts'
+p20
+sa(dp21
+g4
+I100
+sg5
+S'nine of hearts'
+p22
+sa(dp23
+g4
+I100
+sg5
+S'king of spades'
+p24
+sa(dp25
+g4
+I100
+sg5
+S'queen of spades'
+p26
+sa(dp27
+g4
+I100
+sg5
+S'eight of hearts'
+p28
+sa(dp29
+g4
+I100
+sg5
+S'seven of hearts'
+p30
+sa(dp31
+g4
+I100
+sg5
+S'six of hearts'
+p32
+sa(dp33
+g4
+I100
+sg5
+S'five of hearts'
+p34
+sa(dp35
+g4
+I100
+sg5
+S'four of hearts'
+p36
+sa(dp37
+g4
+I100
+sg5
+S'three of hearts'
+p38
+sa(dp39
+g4
+I100
+sg5
+S'two of hearts'
+p40
+sa(dp41
+g4
+I100
+sg5
+S'ace of hearts'
+p42
+sa(dp43
+g4
+I100
+sg5
+S'king of clubs'
+p44
+sa(dp45
+g4
+I100
+sg5
+S'jack of spades'
+p46
+sa(dp47
+g4
+I100
+sg5
+S'queen of clubs'
+p48
+sa(dp49
+g4
+I100
+sg5
+S'ten of spades'
+p50
+sa(dp51
+g4
+I100
+sg5
+S'jack of clubs'
+p52
+sa(dp53
+g4
+I100
+sg5
+S'nine of spades'
+p54
+sa(dp55
+g4
+I100
+sg5
+S'eight of spades'
+p56
+sa(dp57
+g4
+I100
+sg5
+S'ten of clubs'
+p58
+sa(dp59
+g4
+I100
+sg5
+S'nine of clubs'
+p60
+sa(dp61
+g4
+I100
+sg5
+S'seven of spades'
+p62
+sa(dp63
+g4
+I100
+sg5
+S'six of spades'
+p64
+sa(dp65
+g4
+I100
+sg5
+S'five of spades'
+p66
+sa(dp67
+g4
+I100
+sg5
+S'four of spades'
+p68
+sa(dp69
+g4
+I100
+sg5
+S'three of spades'
+p70
+sa(dp71
+g4
+I100
+sg5
+S'two of spades'
+p72
+sa(dp73
+g4
+I100
+sg5
+S'eight of clubs'
+p74
+sa(dp75
+g4
+I100
+sg5
+S'seven of clubs'
+p76
+sa(dp77
+g4
+I100
+sg5
+S'ace of spades'
+p78
+sa(dp79
+g4
+I100
+sg5
+S'king of diamonds'
+p80
+sa(dp81
+g4
+I100
+sg5
+S'queen of diamonds'
+p82
+sa(dp83
+g4
+I100
+sg5
+S'six of clubs'
+p84
+sa(dp85
+g4
+I100
+sg5
+S'jack of diamonds'
+p86
+sa(dp87
+g4
+I100
+sg5
+S'ten of diamonds'
+p88
+sa(dp89
+g4
+I100
+sg5
+S'five of clubs'
+p90
+sa(dp91
+g4
+I100
+sg5
+S'nine of diamonds'
+p92
+sa(dp93
+g4
+I100
+sg5
+S'eight of diamonds'
+p94
+sa(dp95
+g4
+I100
+sg5
+S'seven of diamonds'
+p96
+sa(dp97
+g4
+I100
+sg5
+S'six of diamonds'
+p98
+sa(dp99
+g4
+I100
+sg5
+S'five of diamonds'
+p100
+sa(dp101
+g4
+I100
+sg5
+S'four of diamonds'
+p102
+sa(dp103
+g4
+I100
+sg5
+S'three of diamonds'
+p104
+sa(dp105
+g4
+I100
+sg5
+S'two of diamonds'
+p106
+sa(dp107
+g4
+I100
+sg5
+S'ace of diamonds'
+p108
+sasS'type'
+p109
+S'standard'
+p110
+s.
