@@ -6,35 +6,99 @@ think text-based video game.
 should ultimately tie into cards, but for now let's just 
 work on back-and-forth directions.
 
+
+TO DO:
+	further abstract the working(!!) call-and-response code,
+	and add helper functions to bind keywords to functions across libraries. 
+
+
+
 '''
+import sys
+global pcresponse
 
-out1 = ""
-out2 = ""
-out3 = ""
+class ArdenShell:
+	'''
+	Container for IO and function binding
+	'''
 
-def treat( _input ):
+	bindCommands = {}
+	exitText = "Bye!"
+	pcresponse = ""
 
-	commands = ['shuffle','deal','cut']
+	def userin(self, _input):
+		''' Handle user input '''
+		return _input
 
+	def die(self):
+		print exitText
+		exit()
+
+	def bindCommand( comString, methString):
+		''' construct table linking commands to methods in namespace '''
+		pass
+
+	def loop(self):
+		''' Input loop. Call after setting everything up. '''
+		while True:
+			try:
+				print pcresponse
+				user = raw_input("> ")
+				pcresponse = userin( user )
+			except KeyboardInterrupt:
+				# Catch 
+				die()
+
+def parseUserInput( _input ):
+	commands = ["shuffle","deal","cut", "help"]
+	dieC = ['exit','quit','die']
+
+	_input = _input.lower()
 	_input = _input.split(" ")
 
+	if _input[0] in dieC:
+		exit()
+
 	if _input[0] in commands:
-		#bind to functions??
-		out1 = "ok"
+		index = commands.index(_input[0])
+		args = _input[0:].pop()
+		pcresponse = getattr(sys.modules[__name__], commands[index])(args)
 
 	else:
-		out2 = "did not understand"
+		pcresponse = "did not understand. need HELP?"
+
+	return pcresponse
+
+def shuffle( args ):
+	return "shuffle", args
+	
+def deal( args ):
+	return "deal", args
+
+def cut( args ):
+	return "cut", args
+
+def help( args ):
+	return """
+
+SHUFFLE 5 will bridge-shuffle the deck 5 times.
+CUT 3 will cut the deck into 3 piles
+DEAL 3 will deal three cards off the deck. 
+DEAL 1 3 will deal one card off the third pile.
+
+""" 
 
 if __name__ == "__main__":
 
-	out1 = "hello world"
+	#initialize globals
+	pcresponse = "CARDS. you can SHUFFLE, CUT, or DEAL"
 
 	while True:
 		#IO loop
 		try:
-			print "%s%s%s" % (out1, out2, out3)
+			print pcresponse
 			user_in = raw_input(">")
-			treat(user_in)
+			pcresponse = parseUserInput(user_in)
 
 		except KeyboardInterrupt:
 			#save and exit

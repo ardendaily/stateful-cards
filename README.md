@@ -12,6 +12,6 @@ across sessions.
 ### to-do and timeline
 
 1. basic proof-of-concept: cards as a data structure, verb functions, loading and saving functions.
-2. python package API for ease of use
+2. python package and different card decks (tarot, oracle, etc.)
 3. interactive shell 
 4. interactive shell w/ "code completion" 
