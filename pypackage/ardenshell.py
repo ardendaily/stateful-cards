@@ -9,13 +9,14 @@ class ArdenShell:
 	'''
 	Container for IO and function binding
 	'''
-	def __init__(self, _exitText="Bye!"):
+	def __init__(self):
 		self.bindCommands = {}
-		self.exitText = _exitText
+		self.exitText = "Bye!"
 		self.pcresponse = ""
-		self.banner = "" #displays once at start of program
+		self.err = "Command not found."
+		self.banner = "Welcome" #displays once at start of program
 		self.eBanner = "" #displays after every interaction.
-
+		self.reticule = "> " #beckon input
 
 	def userin(self, _input):
 		''' Handle user input '''
@@ -52,6 +53,12 @@ class ArdenShell:
 	def setBanner( self, banner):
 		self.banner = banner
 
+	def setErrorText( self, _errtext):
+		self.err = _errtext
+
+	def setExitText( self, _exittext):
+		self.exitText = _exittext
+
 	def loop(self):
 		print ""
 		print ""
@@ -63,35 +70,8 @@ class ArdenShell:
 			try:
 				print self.pcresponse
 				print self.eBanner
-				user = raw_input("> ")
+				user = raw_input(self.reticule)
 				self.pcresponse = self.userin( user )
 			except KeyboardInterrupt:
 				# Catch 
 				self.die()
-
-
-def shuffle( args=[] ):
-	return "shuffle", args
-	
-def deal( args=[] ):
-	return "deal", args
-
-def cut( args=[] ):
-	return "cut", args
-
-def help( args=[] ):
-	return """
-
-SHUFFLE N 	bridge-shuffle the deck N times.
-CUT N 		cut the deck into N piles
-DEAL N 		deal N cards off the deck. 
-DEAL N R 	deal N cards off the Rth pile.
-
-""" 
-
-if __name__ == "__main__":
-	shell = ArdenShell()
-	shell.setBanner("WELCOME TO CARDS.")
-	shell.bindCommand(["shuffle","shuf", "s"], "shuffle")
-	shell.bindCommand(["help", "halp", "h"], "help")
-	shell.loop()

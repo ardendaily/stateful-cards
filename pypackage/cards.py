@@ -1,11 +1,8 @@
 '''
 
-simple proof-of-concept for a stateful deck of cards.
-load and save them across sessions. 
-save them to different locations. 
-shuffle them.
-draw from them.
-place them back in the deck.
+TO DO:
+abstract into class. 
+add decks. 
 
 '''
 
