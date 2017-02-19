@@ -21,4 +21,4 @@ across sessions.
 - testing, testing.
 - set up ArdenShell when run as script (for `python -m ArdenCards` interactive fun) 
 - package for pip and deploy 
-- python3 support?? ‾\\_(ツ)_/‾
+- python3 support?? ‾\\\_(ツ)\_/‾
