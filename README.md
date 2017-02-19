@@ -1,5 +1,5 @@
 #STATEFUL CARDS
-##stately cards
+### stately cards
 
 
 A simulation of playing cards in vanilla python, with lifelike 
@@ -12,6 +12,13 @@ across sessions.
 ### to-do and timeline
 
 1. ~~basic proof-of-concept: cards as a data structure, verb functions, loading and saving functions.~~
-2. python package and different card decks (tarot, oracle, etc.)
-3. interactive shell 
-4. interactive shell w/ "code completion" 
+2. ~~python package and different card decks (tarot, oracle, etc.)~~ mostly done, haven't tested yet
+3. ~~interactive shell~~ MOVED to different project
+4. ~~interactive shell w/ "code completion"~~ MOVED
+
+### next steps
+
+- testing, testing.
+- set up ArdenShell when run as script (for `python -m ArdenCards` interactive fun) 
+- package for pip and deploy 
+- python3 support?? ‾\\_(ツ)_/‾
